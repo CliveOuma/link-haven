@@ -20,12 +20,12 @@
        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <!-- main stylesheet -->
        <link rel="stylesheet" href="css/style.css">
-    <title>Bookmarker Application</title>
+    <title>Link Haven</title>
 </head>
 <body class="position-relative vh-100">
     <!----================ main ======================-->
 <main class="text-center container py-5">
-        <h1 class="py-2">Site Saver</h1>
+        <h1 class="py-2">Link Haven</h1>
         <div class="body py-4 mt-5">
             <h2> <i class="fa-solid fa-bookmark"></i> Save your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
             <div class="inputs text-start row g-4 ">
@@ -36,17 +36,17 @@
                 
             </div>
             <div class="col-md-12">
-                <label for="websiteUrl"><i class="fa-solid fa-link pe-2"></i>Site URL
+                <label for="linkUrl"><i class="fa-solid fa-link pe-2"></i>Site URL
                 </label>
-                <input type="text" id="websiteUrl" class="form-control mt-2" placeholder="Website URL" oninput="validation(this)">
+                <input type="text" id="websiteUrl" class="form-control mt-2" placeholder="link URL" oninput="validation(this)">
             </div>
-            <button class="btn px-5 mx-auto"  onclick="addWebsites()">Submit</button>
+            <button class="btn px-5 mx-auto"  onclick="addWebsites()">Save</button>
             </div>
             <div class="row content mt-4 ">
                 <div class="col-md-12 mt-4  content_head">
                 <div class="inner-content d-flex justify-content-around p-2 bg-light">
                     <span>index</span>
-                <span>Website Name</span>
+                <span>Title</span>
                 <span>View</span>
                 <span>Delete</span>
                 </div>
@@ -68,10 +68,6 @@
         <button class="border-0 bg-transparent" onclick="closeModal()"><i class="fa-solid fa-xmark close fs-3"></i></button>
     </div>
     <p>Site Name or URL is not valid. Please follow the rules below:</p>
-<div class="warning_phrase d-flex align-items-center">
-    <i class="fa-regular fa-circle-right p-2"></i>
-    <p>Site Name must:</p>
-</div>
 <div class="warning_phrase d-flex align-items-center mt-2">
     <i class="fa-regular fa-circle-right p-2"></i>
     <p>Site Name must be a valid one</p>

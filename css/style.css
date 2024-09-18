@@ -23,7 +23,7 @@ h1{
 }
 h1::after{
     content: "";
-    background-color: #fe6060;
+    /*background-color: #b260fe;*/
     width: 100%;
     height: 25%;
     position: absolute;
@@ -36,10 +36,10 @@ transition: all 0.5s;
 h1:hover::after{
     height: 50%;
 }
-.body,
+/*.body,
 .content{
-    border-top: 2px dotted #352e28;
-}
+    border-top: 2px dotted #187734;
+} */
 /* Custom CSS for animation */
 @keyframes heartBeat {
     0% {
@@ -58,22 +58,22 @@ h1:hover::after{
 
 h2 {
     display: inline-block;
-    font-size: 1.5625rem; 
+    font-size: 1.5rem; 
     font-family: "Righteous", sans-serif;
     font-weight: 500;
-    background-image: linear-gradient(to right, #0f865e, #00a5e0); 
+    background-image: linear-gradient(to right, #860f2d, #00a5e0); 
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: heartBeat 2s infinite; 
+    animation: heartBeat 3s infinite; 
     text-align: center; 
     margin-bottom: 1.5rem; 
 }
 .form-control:focus {
     color: #212529;
     background-color: #fff;
-    border-color: #d99c39;
+    border-color: #3999d9;
     outline: 0;
     box-shadow: 0 0 0 0.25rem #fec26055;
 }
@@ -109,11 +109,11 @@ width: 25%;
     margin: auto;
 }
 .inner-content .btn-visit{
-    background-color: #9eb23b;
+    background-color: #3d3bb2;
 }
 .inner-content .btn-visit:hover{
-    background-color: #8a9e23;
-    border-color: #6e8018;
+    background-color: #23259e;
+    border-color: #1f1880;
 }
 .inner-content .btn-del{
     background-color: #eb1d36;
@@ -163,6 +163,7 @@ background-color: #febe2e;
     }
     h2{
         width: 70%;
+        font-size: 19px;
     }
     .inner-content button,
     .inner-content a{
